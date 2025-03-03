@@ -1,50 +1,78 @@
-# React + TypeScript + Vite
+# 🌐 Front-end do Blog Pessoal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o front-end desenvolvido para consumir a API do Blog Pessoal. A aplicação permite a interação com as funcionalidades de temas, postagens e usuários, oferecendo uma interface moderna e responsiva.
 
-Currently, two official plugins are available:
+## 🛠️ Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Front-end
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![REST](https://img.shields.io/badge/REST-02569B?style=for-the-badge&logo=rest&logoColor=white)
 
-## Expanding the ESLint configuration
+### Ferramentas de Desenvolvimento
+![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-0078D6?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🚀 Funcionalidades
 
-- Configure the top-level `parserOptions` property like this:
+- **Autenticação de Usuários:** Login e registro de usuários.
+- **Gerenciamento de Temas:** Criação, edição, exclusão e listagem de temas.
+- **Gerenciamento de Postagens:** Criação, edição, exclusão e listagem de postagens.
+- **Interface Responsiva:** Design moderno e adaptável a diferentes dispositivos.
+- **Integração com a API:** Consumo completo da API do Blog Pessoal.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🖥️ Como Executar o Projeto Localmente
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Pré-requisitos
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- Node.js instalado (versão 16 ou superior).
+- Visual Studio Code (ou outra IDE de sua preferência).
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Passos para Execução
+
+1. **Clone o repositório:**
+
+   ```bash
+   git clone https://github.com/IJNavi/blog_pessoal_front.git
+   ```
+
+2. **Acesse o diretório do projeto:**
+
+   ```bash
+   cd blog_pessoal_front
+   ```
+
+3. **Instale as dependências:**
+
+   ```bash
+   npm install
+   ```
+
+4. **Configure o ambiente:**
+
+   - Crie um arquivo `.env` na raiz do projeto e adicione as variáveis de ambiente necessárias, como a URL da API:
+
+     ```env
+     VITE_API_URL=http://localhost:8080
+     ```
+
+5. **Inicie o servidor de desenvolvimento:**
+
+   ```bash
+   npm run dev
+   ```
+
+6. **Acesse a aplicação:**
+
+   Abra o navegador e acesse:
+
+   🔗 [http://localhost:5173](http://localhost:5173)
+
+## 🧑‍💻 Desenvolvedor
+
+**Ivan Barbosa** 🛠️
+
+- Desenvolvedor responsável pela implementação e documentação do projeto.
